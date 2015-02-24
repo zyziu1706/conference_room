@@ -113,7 +113,12 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 9500000, guid: 5e63f7c23b4d143499a17a40e37569d2, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7bcd17226b4f4a24a8d1af29534069d5, type: 2}
+    m_RemovedComponents:
+    - {fileID: 9500000, guid: 5e63f7c23b4d143499a17a40e37569d2, type: 3}
   m_ParentPrefab: {fileID: 100100000, guid: 5e63f7c23b4d143499a17a40e37569d2, type: 3}
   m_RootGameObject: {fileID: 1852784769}
   m_IsPrefabParent: 0
@@ -313,7 +318,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 539609524}
   m_LocalRotation: {x: 0, y: -.707106829, z: 0, w: .707106829}
-  m_LocalPosition: {x: 30, y: 10, z: 0}
+  m_LocalPosition: {x: 30, y: 11, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -505,7 +510,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 4: {fileID: 1852784770}
-  - 95: {fileID: 1852784771}
+  - 111: {fileID: 1852784772}
+  - 114: {fileID: 1852784771}
   m_Layer: 0
   m_Name: sala_konferencyjna
   m_TagString: Untagged
@@ -530,22 +536,33 @@ Transform:
   - {fileID: 489292304}
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!95 &1852784771
-Animator:
-  serializedVersion: 3
+--- !u!114 &1852784771
+MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 9500000, guid: 5e63f7c23b4d143499a17a40e37569d2,
-    type: 3}
-  m_PrefabInternal: {fileID: 113948416}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1852784769}
   m_Enabled: 1
-  m_Avatar: {fileID: 9000000, guid: 5e63f7c23b4d143499a17a40e37569d2, type: 3}
-  m_Controller: {fileID: 0}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44ef9e9cc6ea9d344bd6998e0f51f527, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!111 &1852784772
+Animation:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1852784769}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: b8aaff44084d80740a4a76390e70cfeb, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: b8aaff44084d80740a4a76390e70cfeb, type: 2}
+  - {fileID: 7400000, guid: 1048197983863d342a1c6d25b951ceb1, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2042732020
 GameObject:
   m_ObjectHideFlags: 0
