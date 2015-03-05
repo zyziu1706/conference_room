@@ -7,10 +7,10 @@ public class BoardAnimation : MonoBehaviour {
 	void Update () {
 		if ( Input.GetKey(KeyCode.W)){
 			Debug.Log("Click");
-			animation.Play ("Board_FadeIN");
+			GetComponent<Animation>().Play ("Board_FadeIN");
 
 		}else if (Input.GetKey(KeyCode.S)){
-			animation.Play ("Board_FadeOUT");
+			GetComponent<Animation>().Play ("Board_FadeOUT");
 
 		}
 	
