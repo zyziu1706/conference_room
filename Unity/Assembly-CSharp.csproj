@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Scripts\BoardAnimation.cs" />
+     <Compile Include="Assets\Scripts\FPS.cs" />
      <Compile Include="Assets\Scripts\TVAnimations.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>F:/Programy/Unity5/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
