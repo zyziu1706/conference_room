@@ -28,8 +28,8 @@ public class FPS : MonoBehaviour {
 		public float minimumX = -360F;
 		public float maximumX = 360F;
 		
-		public float minimumY = -60F;
-		public float maximumY = 60F;
+		public float minimumY = -50F;
+		public float maximumY = 50F;
 		
 		float rotationY = 0F;
 		
