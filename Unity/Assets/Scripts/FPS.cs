@@ -31,10 +31,14 @@ public class FPS : MonoBehaviour {
 		public float minimumY = -50F;
 		public float maximumY = 50F;
 		
+		public int speed = 30;
+
 		float rotationY = 0F;
 		
 		void Update ()
 		{
+
+			//Mouse camera rotation controll
 			if (axes == RotationAxes.MouseXAndY)
 			{
 				float rotationX = transform.localEulerAngles.y + Input.GetAxis("Mouse X") * sensitivityX;
@@ -55,34 +59,23 @@ public class FPS : MonoBehaviour {
 				
 				transform.localEulerAngles = new Vector3(-rotationY, transform.localEulerAngles.y, 0);
 			}
-		if (Input.GetKey(KeyCode.W)){
-			transform.position += transform.forward * 30 * Time.deltaTime; 
 
-		}else if (Input.GetKey(KeyCode.S)){
-			transform.position += transform.forward * -30 * Time.deltaTime; 
+			//Keyboard camera movement controll
+			if (Input.GetKey(KeyCode.W)){
+				transform.position += transform.forward * speed * Time.deltaTime; 
+
+			}if (Input.GetKey(KeyCode.S)){
+				transform.position += transform.forward * -speed * Time.deltaTime; 
+				
+			}if (Input.GetKey(KeyCode.A)){
+				transform.position += transform.right * -speed* Time.deltaTime; 
+				
+			}if (Input.GetKey(KeyCode.D)){
+				transform.position += transform.right * speed * Time.deltaTime; 
+				
+			}
 			
-		}
-		else if (Input.GetKey(KeyCode.A)){
-			transform.position += transform.right * -30* Time.deltaTime; 
-			
-		}else if (Input.GetKey(KeyCode.D)){
-			transform.position += transform.right * 30 * Time.deltaTime; 
-			
-		}
-			
-	
-	
-	//Here you define the movment functions
 
 		}
-		
-		void Start ()
-		{
-			//if(!networkView.isMine)
-			//enabled = false;
-			
-			// Make the rigid body not change rotation
-			//if (rigidbody)
-			//rigidbody.freezeRotation = true;
-		}
+
 	}
