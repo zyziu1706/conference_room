@@ -16,6 +16,7 @@ public class GetIn : MonoBehaviour {
 	void Update(){
 		if (getIn == true && Input.GetKey(KeyCode.E)){
 			Camera.main.transform.position = new Vector3(-12, 11, 0);
+           
 			//TODO
 			//Trzeba ustawić canMove na false w skrypcie FPS.cs żeby zablokować poruszanie
 		}

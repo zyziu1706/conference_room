@@ -2,20 +2,17 @@ Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: NVIDIA GeForce GTX 970 (ID=0x13c2)
+    Renderer: NVIDIA GeForce GT 630M     (ID=0x1140)
     Vendor:   NVIDIA
-    VRAM:     3072 MB
+    VRAM:     971 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: E:\Repo\conference_room\Unity\test_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading E:\Repo\conference_room\Unity\test_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: E:\Repo\conference_room\Unity\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading E:\Repo\conference_room\Unity\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: E:\Repo\conference_room\Unity\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading E:\Repo\conference_room\Unity\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.095 seconds
-desktop: 1680x1050 60Hz; virtual: 1680x1050 at 0,0
+Platform assembly: E:\Praca_Inżynierska\conference\Unity\test_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Praca_Inżynierska\conference\Unity\test_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Praca_Inżynierska\conference\Unity\test_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Praca_Inżynierska\conference\Unity\test_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Praca_Inżynierska\conference\Unity\test_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Praca_Inżynierska\conference\Unity\test_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.053 seconds
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-Platform assembly: E:\Repo\conference_room\Unity\test_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: E:\Repo\conference_room\Unity\test_Data\Managed\System.dll (this message is harmless)
