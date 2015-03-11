@@ -284,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82b2c849419a7eb4fbcef33f4312d17c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  axes: 0
+  axes: 1
   sensitivityX: 6
   sensitivityY: 6
   minimumX: -360
@@ -366,7 +366,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press E to Enter
+  m_Text: PressText
 --- !u!222 &773949253
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -409,6 +409,10 @@ BoxCollider:
 --- !u!1 &1009998229
 GameObject:
   m_PrefabParentObject: {fileID: 100010, guid: 5e63f7c23b4d143499a17a40e37569d2, type: 3}
+  m_PrefabInternal: {fileID: 113948416}
+--- !u!4 &1009998230
+Transform:
+  m_PrefabParentObject: {fileID: 400010, guid: 5e63f7c23b4d143499a17a40e37569d2, type: 3}
   m_PrefabInternal: {fileID: 113948416}
 --- !u!65 &1009998233
 BoxCollider:
@@ -495,6 +499,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!1 &1262145594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1262145595}
+  - 135: {fileID: 1262145597}
+  - 114: {fileID: 1262145596}
+  m_Layer: 0
+  m_Name: WhiteboardTrigger
+  m_TagString: WhiteBoardTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1262145595
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262145594}
+  m_LocalRotation: {x: -8.14603425e-08, y: -9.31333455e-10, z: -1.34110451e-07, w: 1}
+  m_LocalPosition: {x: -0, y: -5, z: -5}
+  m_LocalScale: {x: .977600515, y: 1.07605159, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2145954762}
+  m_RootOrder: 0
+--- !u!114 &1262145596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262145594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c50637c346a2634d8f955edaaeee182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressToEnter: {fileID: 773949252}
+--- !u!135 &1262145597
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262145594}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 14.1800003
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1296482191
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,6 +639,59 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+--- !u!1 &1573916506
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1573916507}
+  - 135: {fileID: 1573916509}
+  - 114: {fileID: 1573916508}
+  m_Layer: 0
+  m_Name: UserScreenTrigger
+  m_TagString: UserScreenTrigger
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1573916507
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573916506}
+  m_LocalRotation: {x: -8.14603425e-08, y: -9.31333455e-10, z: -1.34110451e-07, w: 1}
+  m_LocalPosition: {x: 0, y: -5, z: -6}
+  m_LocalScale: {x: -1.51860702, y: -1.67154109, z: -1}
+  m_Children: []
+  m_Father: {fileID: 1009998230}
+  m_RootOrder: 0
+--- !u!114 &1573916508
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573916506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c50637c346a2634d8f955edaaeee182, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressToEnter: {fileID: 773949252}
+--- !u!135 &1573916509
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1573916506}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 14.1800003
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1806393739
 GameObject:
   m_ObjectHideFlags: 0
@@ -715,7 +825,7 @@ GameObject:
   - 114: {fileID: 2093850081}
   m_Layer: 0
   m_Name: PreziBoardTrigger
-  m_TagString: Untagged
+  m_TagString: PreziBoardTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -759,6 +869,10 @@ SphereCollider:
 --- !u!1 &2145954761
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 5e63f7c23b4d143499a17a40e37569d2, type: 3}
+  m_PrefabInternal: {fileID: 113948416}
+--- !u!4 &2145954762
+Transform:
+  m_PrefabParentObject: {fileID: 400000, guid: 5e63f7c23b4d143499a17a40e37569d2, type: 3}
   m_PrefabInternal: {fileID: 113948416}
 --- !u!65 &2145954765
 BoxCollider:
